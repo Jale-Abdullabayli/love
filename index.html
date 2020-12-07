@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Love</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">	
+	<style>	
+		html {
+			scroll-behavior: smooth;
+		}
+		body {
+			font-family: sans-serif;	
+			margin: 0;
+			padding: 0;				
+		}
+		* {
+			color: black;
+			box-sizing: border-box;
+		}
+		.Menu {
+			overflow: hidden;
+			background-color: #F8F9FA;					
+		}
+		.Menu a{
+			text-decoration: none;
+		}
+		.Menu>div:not(.Love){
+			float: right;
+			display: inline-block;
+			padding: 5vw 2vw;
+			font-size: 2vw;
+		}
+		.Menu>div:not(.Love) a {
+			text-shadow: 2px 2px 10px black;			
+		}
+		.Love {
+			box-shadow: 5px 5px 2px black;
+			float: left;
+			padding: 1.5vw;
+			margin-left: 3%;
+			margin-top: 2%;
+			font-size: 4vw;
+			font-family: Brush Script MT;
+			border: 2px solid black;
+			border-radius: 50%;						
+		}
+		.MainPhotos {									
+			display: inline-block;			
+			width: 60%;		
+			padding: 35px 0;					
+		}
+		.MainPhotos>img {		
+			box-shadow: 5px 5px 15px black;
+			border: 2vw solid white;	
+			display: inline-block;	
+			float: right;								
+		}		
+		.MainPhotos>img:first-child {
+			width: 55%;				
+			transform: rotate(10deg);			
+			
+		}
+		.MainPhotos>img:last-child {
+			width: 35%;				
+			transform: rotate(-20deg);
+			margin-top: 15%;
+			margin-right: -5%;					
+		}				
+		.Names {
+			text-align: center;			
+			display: inline-block;
+			font-family: Kunstler Script;									
+			float: left;
+			overflow: hidden;
+			width: 40%;	
+			padding: 10vw 0;				
+		}	
+		.First {			
+			width: 100%;	
+			background-color: #F8F9FA;	
+			overflow: hidden;				
+		}
+		.column {
+			max-width: 33%;
+			flex: 33%;	
+			padding: 0 4px;	
+		}
+		.column img {
+			margin-top: 8px;
+			vertical-align: middle;
+			transition: padding 0.3s;
+			filter: grayscale(40%);
+		}
+		.column>img:hover{
+			padding: 2%;
+			filter: grayscale(0%);
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 4px;			
+		}
+		.forever {
+			width: 7%; 
+			height: auto;					
+			margin-top: auto;
+			margin-bottom: auto;				
+		}		
+		.OUR {
+			font-family:  Lucida Calligraphy; 
+			font-weight: normal;
+			text-shadow: 2px 2px 3px black;
+			font-size: 2vw;
+		}
+		.poem {
+			font-size: 1.3vw;
+			font-family:  Lucida Calligraphy;
+			line-height: 2.5vw;					
+		}
+		@media screen and (max-width: 600px) 
+		{
+			.column {
+				max-width: 100%;
+				flex: 100%;
+			}			
+		}
+		.StoryImg {
+			display: inline-block;
+			float: left; 
+			width: 45%;
+			overflow: hidden;
+			
+		}
+		.PoemTitle {
+			float: left;	
+			width: 45%;
+			margin-left: 5%;
+		}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="Menu">
+			<div class="Love">Love Story</div>
+			<div><a href="#Memories" onclick="location.hash = "#Memories;">Our Memories</a></div>
+			<div><a href="#Story">Our Story</a></div>			
+		</div>
+	</header>
+
+	<div class="First">
+		<div class="Names">	
+				<h1 style="display: inline-block; font-size: 5vw;">Jane</h1>
+				<img src="Photos/heart.webp" style="width: 10%; height: auto; margin-bottom: auto;margin-top: auto;
+				 transform: rotate(20deg);" alt="heart"/> 
+				<h1 style="display: inline-block; font-size: 5vw;">Arthur</h1>						
+				<h2 style="font-size: 5vw;">01.01.2011</h2>				
+			
+		</div>
+		<div class="MainPhotos">
+			<img src="Photos/10.jpg" alt="MainPhoto">
+			<img src="Photos/11.jpg" alt="MainPhoto">
+		</div>
+	</div>
+
+	<div id="Story" style="margin: 10vw 3vw 0 3vw; overflow: hidden;" >
+		<div class="StoryImg">
+			<img src="Photos/13.jpg" alt="Story" style="width: 100%; border-radius: 20px; padding: 5vw 0;">
+		</div>
+		<div class="PoemTitle">
+			<img src="Photos/flower.png" alt="flower" style="width: 15%; ">
+			<h1 class="OUR">OUR STORY</h1>
+			<p class="poem">
+				You are the sun that shines brightly throughout my day.<br>
+				You are the gravity that holds me down in every way.<br>
+				You are the moon that shimmers throughout my night.<br>
+				You are stars that glimmer oh so bright.<br>
+			</pre></p>
+			<p class="poem">
+				You are the oxygen that keeps me alive.<br>
+				You are my heart that beats inside.<br>
+				You are the blood that flows through me.<br>
+				You are the only guy I can see.<br>
+				You have the voice of when a mockingbird sings.<br>
+				You are my everything.<br>
+			</pre></p>
+			<p class="poem">
+				You are my one and only.<br>
+				You stop me from being so lonely.<br>
+				We plan our future as if we have a clue.<br>
+				I never want to lose you.<br>
+				I want you to be my husband, and I want to be your wife.<br>
+				I want to be with you for the rest of my life.<br>
+			</pre></p>
+		</div>
+	</div>
+
+	<div id="Memories" style="margin: 5vw 2vw; overflow: hidden;">
+		<div style="text-align: center;">
+			<img src="Photos/flower.png" alt="flower" style="width: 10%;">
+			<h1 class="OUR">OUR MEMORIES</h1>
+
+			<div class="row">
+				<div class="column">
+					<img src="Photos/3.jpg" alt="Memories" style="width: 100%;">
+					<img src="Photos/4.jpg" alt="Memories" style="width: 100%;">
+					<img src="Photos/9.jpg" alt="Memories" style="width: 100%;">
+				</div>
+				<div class="column">
+					<img src="Photos/5.jpg" alt="Memories" style="width: 100%;">
+					<img src="Photos/7.jpg" alt="Memories" style="width: 100%;">
+					<img src="Photos/2.jpg" alt="Memories" style="width: 100%;">
+				</div>
+				<div class="column">
+					<img src="Photos/6.jpg" alt="Memories" style="width: 100%;">
+					<img src="Photos/12.jpg" alt="Memories" style="width: 100%;">
+					<img src="Photos/8.jpg" alt="Memories" style="width: 100%;">
+				</div>
+			</div>		
+		</div>
+
+		<footer style="margin-top: 10vw;">
+			<div style="text-align: center;">
+				<hr style="width: 90%;">
+				<div style="margin-top: 50px;">
+					<img src="Photos/flower.png" alt="flower" style="width: 10%; height: 10%;">
+					<h1 class="OUR">OUR LOVE</h1>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+	</html>
